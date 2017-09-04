@@ -11,8 +11,15 @@
 
     <style name="HeaderText">
         <item name="android:textColor">@color/H1</item>
-        <item name="android:textSize">26sp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="FooterImage">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:padding">15dp</item>
     </style>
 
 </resources>

@@ -7,41 +7,74 @@
     android:layout_height="match_parent"
     tools:context="com.hoymm.root.airpollution_info.MainActivity"
     tools:layout_editor_absoluteY="0dp"
-    tools:layout_editor_absoluteX="0dp">
+    tools:layout_editor_absoluteX="0dp"
+    android:background="#000000"
+    >
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="419dp"
-        android:layout_height="64dp"
-        android:background="@color/colorPrimary"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </FrameLayout>
-
-    <TextView
-        android:id="@+id/textView2"
-        style="@style/HeaderText"
-        android:layout_width="266dp"
-        android:layout_height="51dp"
-        android:text="@string/select_city"
-        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="@+id/frameLayout"
-        android:layout_marginLeft="8dp" />
+        android:background="@color/footerBackground"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/location"
+        app:layout_constraintVertical_bias="1.0"
+        android:id="@+id/linearLayout"></LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/ic_cityscape"
-        app:layout_constraintLeft_toRightOf="@+id/textView2"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
-        app:layout_constraintTop_toTopOf="@+id/frameLayout" />
+        android:id="@+id/pick_location"
+        style="@style/FooterImage"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_search_active" />
+
+    <ImageView
+        style="@style/FooterImage"
+        android:id="@+id/location"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pick_location"
+        app:layout_constraintTop_toTopOf="@+id/pick_location"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_location"
+        android:layout_marginRight="149dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="149dp"
+        android:layout_marginEnd="149dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintRight_toLeftOf="@+id/info"
+        app:layout_constraintLeft_toRightOf="@+id/pick_location"
+        android:layout_marginLeft="149dp"
+        app:layout_constraintHorizontal_bias="0.503" />
+
+    <ImageView
+        android:id="@+id/info"
+        style="@style/FooterImage"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pick_location"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pick_location"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_info"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
 </android.support.constraint.ConstraintLayout>
