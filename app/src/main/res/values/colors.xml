@@ -7,5 +7,5 @@
 
     <color name="H1">#273694</color>
     <color name="footerColor">#949494</color>
-    <color name="footerBackground">#9b9b9b</color>
+    <color name="footerBackground">#000000</color>
 </resources>
