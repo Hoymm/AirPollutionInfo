@@ -1,4 +1,4 @@
-package com.hoymm.root.airpollution_info.ViewPager;
+package com.hoymm.root.airpollution_info.AppViewPagerAndFooterPanel.AppViewPager.Fragments;
 
 
 import android.os.Bundle;
